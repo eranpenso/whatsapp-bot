@@ -50,9 +50,6 @@ const { Client } = require('whatsapp-web.js');
 const client = new Client();
 var Gematria = require('gematria');
 
-//PORN
-const sites=["https://www.xvideos.com/","https://www.pornhub.com/","https://xhamster.com/",
-"https://www.xnxx.com/","https://www.youporn.com/","https://hclips.com/","https://www.porn.com/","https://www.tnaflix.com/","https://www.tube8.com/","https://spankbang.com/","https://www.drtuber.com/","https://www.nuvid.com/","https://www.ixxx.com/","https://www.sunporno.com/","https://www.pornhd.com/","https://www.thumbzilla.com/","https://hdhole.com/","https://www.porndroids.com/"]
 //WEATHER
 function makeWeatherRequests(city)
 {
