@@ -1,16 +1,8 @@
-const express = require('express')
-const app = express()
-const port = 3000
-const fetch = require('node-fetch');
-app.use(express.static('public'))
+const qrcode = require('qrcode-terminal');
+const { Client } = require('whatsapp-web.js');
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-  })
-  
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-})
+const client = new Client();
+var Gematria = require('gematria');
 
 //WIKI
 function makeWikiRequest()
@@ -44,11 +36,6 @@ function titletosearch(title)
 {
   return title.replace(" ","_")
 }
-const qrcode = require('qrcode-terminal');
-const { Client } = require('whatsapp-web.js');
-
-const client = new Client();
-var Gematria = require('gematria');
 
 //WEATHER
 function makeWeatherRequests(city)
